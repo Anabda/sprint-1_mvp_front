@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Aparelhos Eletrônicos</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Aparelhos eletrônicos</h2>
+        </div>
+        <div class="banner">
+            <img src="Images/eletronicos-fundo.jpg"
+                alt="y">
+        </div>
+    </header>
+<div class="box"> 
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <div class="fields">
+            <input type="text" class="newItemField" id="newCode" placeholder="Código do patrimônio: *">
+            <input type="text" class="newItemField" id="newName" placeholder="Nome: *">
+            <input type="text" class="newItemField" id="newPower" placeholder="Potência (W): *">
+            <input type="text" class="newItemField" id="newVoltage" placeholder="Voltagem (V): *">
+            <input type="text" class="newItemField" id="newRoom" placeholder="Cômodo:">
+            <input type="text" class="newItemField" id="newAmperage" placeholder="Amperagem (A):">
+            <input type="text" class="newItemField" id="newDiameter" placeholder="Diâmetro do fio (mm):">
+            <span onclick="newItem()" class="addBtn">Adicionar</span>
+        </div>
+        <div class="mandatoryText">
+            <br/>* Campos obrigatórios
+        </div> 
+    </section>
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <thead id="myTableHeader">
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Potência (W)</th>
+                    <th>Voltagem (V)</th>
+                    <th>Cômodo</th>
+                    <th>Amperagem (A)</th>
+                    <th>Diâmetro do fio (mm)</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="myTableBody">
+            </tbody>
+        </table>
+    </section>
+</div>      
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
+
